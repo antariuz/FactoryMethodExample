@@ -1,5 +1,4 @@
 import model.Scooter;
-import model.ScooterTypes;
 import model.factory.ScooterFactory;
 import org.junit.Test;
 
@@ -12,9 +11,9 @@ public class FactoryMethodExampleTest {
 
     @Test
     public void testScooterTypeSelection() {
-        ScooterTypes scooterType = ScooterTypes.ELECTRICAL;
+        ScooterFactory.ScooterTypes scooterType = ScooterFactory.ScooterTypes.ELECTRICAL;
         assertEquals("Type was not lexically identical to \"ELECTRICAL\"",
-                0, scooterType.compareTo(ScooterTypes.ELECTRICAL));
+                0, scooterType.compareTo(ScooterFactory.ScooterTypes.ELECTRICAL));
     }
 
 

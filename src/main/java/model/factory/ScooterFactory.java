@@ -1,11 +1,15 @@
 package model.factory;
 
 import model.Scooter;
-import model.ScooterTypes;
 import model.impl.ElectricalScooter;
 import model.impl.MechanicalScooter;
 
 public class ScooterFactory {
+
+    public enum ScooterTypes {
+        MECHANICAL,
+        ELECTRICAL
+    }
 
     public Scooter createScooter(ScooterTypes type) {
         Scooter scooter;
