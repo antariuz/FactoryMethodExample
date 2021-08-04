@@ -1,11 +1,11 @@
 package model.factory;
 
 import model.Vehicle;
-import model.impl.Scooter;
+import model.impl.Bicycle;
 
-public class ScooterFactory extends Factory {
+public class BicycleFactory extends Factory {
     @Override
     public Vehicle createVehicle() {
-        return new Scooter();
+        return new Bicycle();
     }
 }
