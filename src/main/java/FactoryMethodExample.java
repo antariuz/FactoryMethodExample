@@ -7,6 +7,6 @@ public class FactoryMethodExample {
         Vehicle scooter = new ScooterFactory().createVehicle();
         Vehicle bicycle = new BicycleFactory().createVehicle();
         System.out.println(scooter.getClass() + "\n" + bicycle.getClass());
-
+        // Some comments
     }
 }
